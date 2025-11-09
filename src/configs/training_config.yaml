@@ -1,0 +1,67 @@
+# Training Configuration for Underwater Plastic Detection
+
+# Dataset
+dataset:
+  name: "Underwater Plastic Dataset (UPD)"
+  root_dir: "data/upd/UPD.v1.yolov5pytorch"
+  format: "yolov5"
+  image_size: 416
+  num_classes: 2  # plastic, trash
+  categories:
+    - plastic
+    - trash
+  
+  splits:
+    train: "train"
+    val: "val"
+    test: "test"
+
+# Model
+model:
+  architecture: "faster_rcnn"  # or 'yolov8'
+  backbone: "resnet50"
+  pretrained: true
+  num_classes: 3  # 2 + background
+
+# Training
+training:
+  batch_size: 16
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: "Adam"
+  scheduler: "CosineAnnealingLR"
+  
+  early_stopping:
+    enabled: true
+    patience: 15
+  
+  checkpointing:
+    save_frequency: 10
+    save_best: true
+  
+  device: "cuda"
+
+# Data Augmentation (matching UPD specs)
+augmentation:
+  training:
+    horizontal_flip: 0.5
+    vertical_flip: 0.3
+    rotation: 15
+    brightness: 0.22
+    contrast: 0.22
+    hue: 25
+    saturation: 0.42
+    exposure: 0.22
+    blur: 0.25
+    grayscale: 0.47
+    cutout: 0.5
+  
+  validation:
+    enabled: false
+
+# Output
+output:
+  checkpoint_dir: "runs/training"
+  log_dir: "logs"
+  tensorboard_dir: "runs/tensorboard"

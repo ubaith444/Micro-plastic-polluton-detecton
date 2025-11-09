@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+Key Sections:
+✅ Project Overview - Key capabilities & performance benchmarks
+✅ Dataset Information - CleanSea/e-CleanSea details, 19 categories
+✅ Quick Start - 6 steps to get running immediately
+✅ Project Structure - Complete directory organization
+✅ Requirements & Installation - System requirements, step-by-step setup
+✅ Usage Guide - Training, inference, evaluation examples
+✅ Model Training & Performance - Training workflow, expected results
+✅ Testing - pytest configuration and test coverage
+✅ Environmental Impact - SDG 14 alignment & applications
+✅ Contributing Guidelines - Collaboration instructions
+✅ License & Citation - MIT License, academic references
+✅ Contact & Support - Help channels
+✅ Resources & References - Documentation links
+✅ Status & Badges - Visual project indicators
+
+🎯 README Highlights
+Element	Description
+Badges	Python, PyTorch, YOLOv8, License status
+Quick Start	6-step setup for immediate use
+Dataset Details	Statistics, categories, structure
+Complete Setup	From cloning to verification
+Code Examples	Training, inference, evaluation
+Performance Table	Benchmarks for all model sizes
+Testing Guide	pytest integration and coverage
+Environmental Mission	SDG 14 alignment & real-world applications
+Professional Format	Tables, emoji, clear navigation
+Comprehensive Links	Resources, documentation, issues
+✨ Features
+🌟 Professional Formatting with badges, emojis, and markdown best practices
+
+🚀 Quick Start Section - Get running in 6 steps
+
+📊 Detailed Dataset Documentation - 19 debris categories explained
+
+💻 Code Examples - Training, inference, and evaluation samples
+
+🧪 Testing Framework - pytest configuration
+
+🌍 Environmental Impact - SDG 14 alignment documented
+
+📚 Comprehensive Resources - Links to papers, docs, related projects
+
+🤝 Contributing Guide - Clear collaboration guidelines
+
+📈 Performance Metrics - Benchmarks for different models
+=======
 Underwater Plastic Detection is a computer vision project that uses deep learning to automatically detect and classify plastic debris in underwater environments. This system helps monitor marine pollution and supports ocean conservation efforts.
 
 Key Goals:
@@ -498,3 +546,4 @@ Augmentation: Albumentations
 
 Inspiration: Marine conservation and ocean cleanup initiatives
 Visualization of classification results and accuracy metrics.
+>>>>>>> 4717859ce22813e41785f28e8c431e6c0ee1b7a5
